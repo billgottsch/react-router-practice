@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import api from './Api.js';
 import axios from 'axios';
 import './StorePage.css';
+import { Link } from 'react-router';
 
-export default class StorePage extends Component {
+
+export default class stores extends Component {
   constructor(props){
     super(props);
     this.state={
@@ -33,8 +35,9 @@ export default class StorePage extends Component {
           console.log(store);
           return (
             <div className="storeInformation">
-              <ul className="StorePageList" key={store.id}>{store.name}
-                <li className="StorePage address">{store.address}
+              <ul className="StorePageList">
+                <Link to={'/stores/' + store.id}><span className="storeName">{store.name}</span></Link>
+                <li className="stores address">{store.address}
                   <br />{store.city}, {store.state}</li>
                 <li className="StorePage hours">{store.hours}</li>
               </ul>

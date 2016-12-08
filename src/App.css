@@ -7,12 +7,33 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #ddd;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
+.bbIcon {
+  text-align: left;
+}
+
 .App-intro {
   font-size: large;
+}
+
+.App-Navigation {
+  list-style:none;
+  display:flex;
+  justify-content:space-around;
+  margin:0;
+  padding: 0;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.App-Nav-list a{
+  color:#1560FB;
+  font-size: 24px;
+  text-decoration: none;
+
 }

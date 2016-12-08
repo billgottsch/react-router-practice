@@ -2,22 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import { Router, Route, Link, IndexRoute, browserHistory } from 'react-router';
-import HomePage from './HomePage';
-import StorePage from './StorePage';
-import AboutPage from './AboutPage';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import home from './HomePage';
+import stores from './StorePage';
+import about from './AboutPage';
 import NoMatch from './NoMatch';
-import OneStore from './OneStore'
+import oneStore from './OneStore';
 
 
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={HomePage} />
-      <Route path="StorePage" component={StorePage}/>
-      <Route path="AboutPage" component={AboutPage}/>
-      <Route path="StorePage/:OneStoreId" component={OneStore}/>
+      <IndexRoute component={home} />
+      <Route path="stores" component={stores}/>
+      <Route path="about" component={about}/>
+      <Route path="stores/:id" component={oneStore}/>
     </Route>
     <Route path="*" component={NoMatch}/>
   </Router>

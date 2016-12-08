@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { withGoogleMap } from 'react-google-maps';
-import axios from 'axios';
-import { Router, Route, Link } from 'react-router';
 import './index.css';
 
-export default class HomePage extends Component {
+export default class home extends Component {
   render() {
     return(
       <div className="App-HomePage">
