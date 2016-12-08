@@ -1,0 +1,27 @@
+.StorePageContent {
+  margin: 0;
+  padding: 0;
+}
+
+.StoreInformation {
+  display: flex;
+  text-align: center;
+}
+
+.StorePageList {
+  width: 30%;
+  border: 1px solid #aaaccc;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.StorePage {
+  list-style:none;
+  padding: .5rem;
+  font-size: 16px;
+  font-weight: normal;
+
+}
